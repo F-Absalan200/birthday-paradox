@@ -10,7 +10,7 @@ import visual_simulator.logic as visual_logic
 def day_to_date(day_number):
     """
     Converts a day number from 1 to 365
-    into a readable month and day.
+    into e month and day.
     """
 
     start_date = datetime(2023, 1, 1)
@@ -223,7 +223,7 @@ elif page == "👥 Visual Simulator":
         else:
 
             st.info(
-                "❌ No shared birthdays found."
+                "❌ No shared birthdays "
             )
 
 
