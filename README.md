@@ -1,55 +1,119 @@
 # Birthday Paradox Simulator 🎂
 
-A simple interactive Streamlit app to simulate the Birthday Paradox and calculate the probability of at least two people sharing the same birthday.
+An interactive Streamlit app that explores the Birthday Paradox in two different ways.
+
+The project includes a **Probability Simulator** for estimating the probability of shared birthdays through repeated experiments, and a **Visual Simulator** that generates a single group of birthdays and shows which people share the same birthday.
 
 ---
 
-**Features**
-- Input number of people and number of trials
-- Calculate probability of shared birthdays
-- Interactive chart visualization
-- Fun balloon animation for results
+## Features
+
+### 📊 Probability Simulator
+
+* Input the number of people
+* Choose the number of simulation trials
+* Calculate the probability of at least two people sharing a birthday
+* Visualise the result with a bar chart
+* View how the probability changes as the number of people increases
+* Fun balloon animation for simulation results
+
+### 👥 Visual Simulator
+
+* Choose a group size from 1 to 100 people
+* Generate a random birthday for each person
+* Display each person and their birthday
+* Detect shared birthdays within the group
+* Highlight people who have matching birthdays
+* Show matching birthday groups separately
 
 ---
 
-**Installation**
+## Installation
+
 1. Clone the repository:
 
 ```bash
 git clone https://github.com/F-Absalan200/birthday-paradox.git
 cd birthday-paradox
 ```
-2. Install dependencies:
+
+2. Install the dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
+
 ---
 
-**Usage**
-Run the app with Streamlit:
+## Usage
+
+Run the Streamlit app:
+
 ```bash
 streamlit run src/app.py
 ```
-- Enter the number of people and number of trials
-- Click "Calculate" to see the probability
-- Check the chart for visual results
+
+After launching the application, use the sidebar to choose between the two simulators.
+
+### Probability Simulator
+
+1. Enter the number of people.
+2. Enter the number of simulation trials.
+3. Click **Calculate Probability**.
+4. View the estimated probability of shared birthdays.
+5. Explore the probability chart.
+
+### Visual Simulator
+
+1. Enter the number of people.
+2. Click **Generate Birthdays**.
+3. View the randomly generated birthdays.
+4. Check whether any people share the same birthday.
+5. Explore the matching birthday groups.
 
 ---
 
-**Project Structure**
-```bash
-project/
+## Project Structure
+
+```text
+birthday-paradox/
 │
 ├── src/
-│   ├── app.py       # Streamlit interface
-│   ├── logic.py     # Birthday paradox simulation logic
+│   ├── app.py
+│   │
+│   ├── probability_simulator/
+│   │   ├── __init__.py
+│   │   └── logic.py
+│   │
+│   ├── visual_simulator/
+│   │   ├── __init__.py
+│   │   └── logic.py
+│   │
 │   └── __init__.py
 │
-├── assets/          # Images
+├── assets/
+│   └── ...
+│
 ├── requirements.txt
 └── README.md
 ```
+
 ---
 
-**Author**
+## How It Works
+
+The project demonstrates two different approaches to the Birthday Paradox.
+
+The **Probability Simulator** runs the experiment many times and calculates how often at least two people share a birthday.
+
+The **Visual Simulator** performs one experiment at a time. It generates one birthday for each person, checks for duplicates, and visually identifies people with matching birthdays.
+
+This separation makes it possible to explore the Birthday Paradox both statistically and visually.
+
+---
+
+## Author
+
 Absalan | [GitHub](https://github.com/F-Absalan200?tab=repositories)
+
+
