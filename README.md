@@ -6,6 +6,12 @@ The project includes a **Probability Simulator** for estimating the probability 
 
 ---
 
+## Live Demo
+
+Try the app online:
+
+[Open Birthday Paradox Simulator](https://birthday-paradox-simulation.streamlit.app/)
+
 ## Features
 
 ### 📊 Probability Simulator
