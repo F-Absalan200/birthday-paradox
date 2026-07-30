@@ -16,21 +16,18 @@ Try the app online:
 
 ### 📊 Probability Simulator
 
-* Input the number of people
-* Choose the number of simulation trials
+* Input the number of people and simulation trials
 * Calculate the probability of at least two people sharing a birthday
 * Visualise the result with a bar chart
 * View how the probability changes as the number of people increases
-* Fun balloon animation for simulation results
+
 
 ### 👥 Visual Simulator
 
 * Choose a group size from 1 to 100 people
-* Generate a random birthday for each person
-* Display each person and their birthday
-* Detect shared birthdays within the group
-* Highlight people who have matching birthdays
-* Show matching birthday groups separately
+* Generate a random birthday for each person and display each person and their birthday
+* Detect shared birthdays within the group and highlight them
+
 
 ---
 
